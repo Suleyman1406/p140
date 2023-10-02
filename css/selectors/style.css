@@ -57,3 +57,16 @@ p {
 #card-span-second {
   background-color: aquamarine;
 } */
+
+/* .card .header {
+  background-color: red;
+} */
+
+/* div span > p {
+  color: red;
+} */
+
+/* div ~ span,
+div ~ p {
+  color: red;
+} */
