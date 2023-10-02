@@ -1,0 +1,87 @@
+/* p { */
+/* color: ; */
+/* } */
+
+/* div { */
+/* width: 200; */
+/* height: 200px; */
+/* background-color: aqua; */
+/* width: 200px; */
+/* height: 200px; */
+/* border: 4px double black; */
+/* border-width: 1px; */
+/* border-style: dotted; */
+/* border-color: red; */
+/* border: none; */
+/* border: 2px solid green; */
+/* border-radius: 50%; */
+/* } */
+/* div{
+  background-color: aquamarine;
+}
+ span{
+  background-color: aquamarine;
+} */
+
+/* div,
+span {
+  background-color: aquamarine;
+} */
+/* 
+div {
+  width: 300px;
+  height: 300px;
+  display: inline;
+} */
+
+/* div {
+  width: 100px;
+  height: 100px;
+  display: block;
+} */
+
+/* div {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+} */
+
+div {
+  /* width: 100px;
+  height: 100px;
+  background-color: red;
+  display: inline-block; */
+
+  /* padding: 50px; */
+  /* padding-left: 20px;
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 40px; */
+  /* padding: 10px;
+  margin-right: 50px;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 50px; */
+}
+
+/* div {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  background-color: aqua;
+} */
+/* div span { */
+/* margin-left: 42px; */
+/* padding: 10px; */
+/* } */
+
+/* div {
+  display: inline;
+  width: 150px;
+  height: 150px;
+  border: 1px solid red;
+} */
+
+.swap-to-left {
+  /* margin-left: 0px; */
+}
