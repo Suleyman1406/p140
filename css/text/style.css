@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+div {
+  /* height: 500px; */
+  /* background-color: pink; */
+  /* width: 200px; */
+  /* background-color: rgba(255, 0, 0, 0.2); */
+  /* opacity: 1; */
+  /* text-align: center; */
+}
+
+/* span {
+  display: block;
+  text-align: center;
+} */
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.outside {
+  width: 600px;
+  background-color: red;
+}
+
+.inside {
+  width: 10%;
+  height: 50px;
+  background-color: aquamarine;
+} */
+
+/* p {
+  text-align: center;
+  margin: 10px;
+  text-decoration: underline double red;
+}
+
+a {
+  text-decoration: none;
+} */
+
+p {
+  /* text-transform: capitalize; */
+  /* text-indent: 50px; */
+  /* letter-spacing: -1.3px; */
+  /* line-height: 50px; */
+  /* word-spacing: 30px; */
+}
+
+/* ul {
+  margin: 40px;
+  list-style-type: square;
+} */
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-size: 32px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* span {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+} */
