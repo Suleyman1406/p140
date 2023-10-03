@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 50px;
+}
+span {
+  /* display: inline-block; */
+}
+.square {
+  /* width: 150px;
+  height: 150px;
+  background-color: palevioletred; */
+
+  /* transform: translateX(200px); */
+}
+
+/* div.square {
+  background-color: aquamarine;
+  transform: translate(100px, 50px);
+} */
+
+/* .square {
+  width: 150px;
+  height: 150px;
+  background-color: peru;
+  transform: rotateY(90deg);
+} */
+
+/* .square {
+  width: 150px;
+  height: 150px;
+  background-color: peru;
+  transform: scale(0.2);
+} */
