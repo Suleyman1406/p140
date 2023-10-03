@@ -61,12 +61,20 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
-p {
+/* p {
   font-size: 32px;
   font-weight: 600;
   font-style: italic;
-}
+} */
 
 /* span {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+} */
+
+/* div {
+  width: 400px;
+  background-color: beige;
+  padding: 10px;
+} */
+/* p {
 } */

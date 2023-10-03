@@ -11,3 +11,28 @@
   height: 50px;
   background-color: red;
 } */
+
+/* div {
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+  clip-path: polygon(
+    0% 20%,
+    15% 0,
+    60% 0%,
+    100% 50%,
+    60% 100%,
+    19% 100%,
+    0% 80%
+  );
+  background-color: pink;
+} */
+
+div {
+  width: 200px;
+  height: 200px;
+  margin: 50px;
+  background-color: pink;
+  overflow-x: auto;
+  white-space: nowrap;
+}
