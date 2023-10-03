@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  padding: 40px;
+} */
+
+div {
+  /* width: 600px;
+  height: 400px;
+  background-color: beige;
+  margin: 100px auto;
+  padding: 40px;
+  position: relative; */
+  /* background-color: pink; */
+  /* position: absolute;
+  top: 30px;
+  left: 50px; */
+}
+
+/* button {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+} */
+/* 
+.input-container {
+  width: 220px;
+  position: relative;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 10px 15px;
+  padding-left: 30px;
+  border: 2px solid pink;
+  border-radius: 8px;
+  outline: none;
+}
+
+.input-container img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.chat-badge {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background-color: red;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  cursor: pointer;
+}
+
+.chat-badge img {
+  margin-top: 12px;
+} */
+
+#navbar {
+  width: 100%;
+  background-color: rgb(255, 196, 86);
+  padding: 10px 32px;
+  position: fixed;
+  top: 0px;
+}
+#search-bar {
+  width: 100%;
+  height: 48px;
+  padding: 10px 32px;
+  position: sticky;
+  top: 0px;
+  background-color: rebeccapurple;
+}
+p {
+  /* margin-top: 50px; */
+}
+.navbar-shadow {
+  width: 100%;
+  height: 48px;
+}
