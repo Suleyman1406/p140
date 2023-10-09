@@ -28,11 +28,19 @@
   background-color: pink;
 } */
 
-div {
+/* div {
   width: 200px;
   height: 200px;
   margin: 50px;
   background-color: pink;
   overflow-x: auto;
   white-space: nowrap;
+} */
+
+div {
+  height: 700px;
+  background-image: url("https://i.pinimg.com/originals/66/38/39/663839af521e5c2892b29e4de83079ae.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
