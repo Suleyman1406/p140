@@ -1,0 +1,60 @@
+/* button {
+  padding: 12px 18px;
+  border-radius: 4px;
+  border: 2px solid purple;
+  background-color: blueviolet;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: transparent;
+  color: purple;
+}
+
+button:disabled {
+  background-color: gray;
+  opacity: 0.7;
+  border-color: gray;
+  color: white;
+  cursor: not-allowed;
+}
+
+button:active {
+  transform: scale(0.95);
+} */
+
+/* input {
+  padding: 10px 12px;
+  border: 2px solid orange;
+  border-radius: 4px;
+  transition: 0.5s;
+  outline: none;
+}
+
+input:focus {
+  padding: 10px 20px;
+  border-width: 4px;
+} */
+
+/* div h1:nth-child(2n - 1) {
+  background-color: red;
+} */
+/* 
+p::first-letter {
+  color: red;
+  font-size: 32px;
+}
+p::first-line {
+  font-size: 10px;
+}
+
+p::selection {
+  background-color: pink;
+  color: yellow;
+} */
+
+/* p{
+  user-select: none;
+} */
