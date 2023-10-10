@@ -117,6 +117,10 @@ html {
   border-color: #437ef7;
 }
 
+#landing-header .topbar > img:last-child {
+  display: none;
+}
+
 #hero-section {
   background-color: #f8f9fb;
 }
@@ -503,4 +507,159 @@ html {
 
 #customer-say-section > div > .more-btn-container > button:hover {
   opacity: 0.7;
+}
+
+@media screen and (max-width: 1280px) {
+  .container {
+    width: 672px;
+    padding: 0;
+  }
+  #landing-header .topbar .left-side .navigation-items,
+  #landing-header .topbar .right-side {
+    display: none;
+  }
+  #landing-header .topbar > img:last-child {
+    display: initial;
+  }
+
+  #hero-section .card {
+    flex-direction: column-reverse;
+    row-gap: 40px;
+  }
+  #hero-section .card > .left-side {
+    align-self: start;
+  }
+  #promise-section {
+    padding: 40px 0;
+  }
+  #promise-section > div {
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 32px;
+  }
+  #promise-section > div > div > p {
+    width: 256px;
+  }
+  #promise-section > div > div > img {
+    width: 48px;
+  }
+
+  #product-features-section > div > header > p {
+    width: 100%;
+  }
+
+  #product-features-section > div > .content {
+    flex-direction: column-reverse;
+    row-gap: 48px;
+  }
+  #product-features-section > div > .content > .right-side,
+  #product-features-section > div > .content > .left-side,
+  #product-features-section > div > .content > .right-side > img {
+    width: 100%;
+  }
+  #product-features-section > div > header {
+    margin: 40px 0;
+  }
+  #product-features-section > div > header {
+    margin-bottom: 40px;
+  }
+  #product-features-section > div > .content > .left-side > p {
+    display: none;
+  }
+  #product-features-section > div > .content > .left-side > ul {
+    margin-top: 24px;
+  }
+}
+
+@media screen and (max-width: 672px) {
+  .container {
+    width: 343px;
+  }
+  #hero-section .card > .right-side {
+    width: 343px;
+    height: 343px;
+    padding: 19.6px;
+    gap: 6.12px;
+  }
+  #hero-section .card .right-side .box {
+    width: 148.83749px;
+    height: 148.83749px;
+    row-gap: 14.7px;
+  }
+  #hero-section .card .right-side .box img {
+    width: 31.85px;
+    height: 31.85px;
+  }
+  #hero-section .card .right-side .box div h3 {
+    font-size: 15.925px;
+    margin-bottom: 4.9px;
+    line-height: 19.93px; /* 125.151% */
+    letter-spacing: -0.159px;
+  }
+  #hero-section .card .right-side .box div p {
+    font-size: 12px;
+    line-height: 15px; /* 125% */
+    letter-spacing: -0.061px;
+  }
+
+  #hero-section .card .right-side #box-dots-top {
+    width: 145.775px;
+    height: 63.088px;
+  }
+  #hero-section .card .right-side #box-wave-bottom {
+    width: 45.937px;
+    height: 42.875px;
+  }
+  #hero-section .card .right-side #box-heart-center {
+    width: 40.172px;
+    height: 40.992px;
+  }
+  #hero-section .card .left-side {
+    width: 100%;
+  }
+  #hero-section .card .left-side h1 {
+    font-size: 36px;
+    line-height: 44px; /* 122.222% */
+    letter-spacing: -0.72px;
+  }
+  #hero-section .card .left-side ul {
+    margin: 24px 0 32px;
+  }
+  #hero-section .card .left-side .subscription-wrapper {
+    flex-direction: column;
+    row-gap: 16px;
+  }
+  #hero-section .card .left-side .subscription-wrapper input {
+    width: 100%;
+    border-radius: 6px;
+  }
+  #hero-section .card .left-side .subscription-wrapper button {
+    border-radius: 6px;
+  }
+  #promise-section,
+  #product-features-section > div > header {
+    padding: 32px 0;
+  }
+  #product-features-section > div > header {
+    margin-bottom: 32px;
+  }
+  #product-features-section > div > header > h2 {
+    font-size: 24px;
+    line-height: 32px; /* 133.333% */
+    letter-spacing: -0.48px;
+    margin-bottom: 12px;
+  }
+  #product-features-section > div > header > p {
+    font-size: 16px;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.1px;
+  }
+  #product-features-section > div > .content {
+    row-gap: 32px;
+  }
+  #product-features-section > div > .content > .left-side > h1 {
+    font-size: 28px;
+    line-height: 36px; /* 128.571% */
+    letter-spacing: -0.56px;
+  }
 }
