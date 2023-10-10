@@ -1,0 +1,51 @@
+/* div {
+  width: 400px;
+  height: 400px;
+  background-color: purple;
+} */
+
+/*  Max-width ile azalan sira ile yazala */
+
+/* if(ekranUzunlugu <= 1280px){
+
+} */
+/* @media screen and (max-width: 1280px) {
+  div {
+    background-color: blue;
+  }
+} */
+
+/*
+if(ekranUzunlugu <= 698){
+
+}
+*/
+/* @media screen and (max-width: 698px) {
+  div {
+    background-color: purple;
+  }
+} */
+
+/*  Min-width ile yazilan*/
+
+/*
+if(ekranUzunlugu >= 1280px){
+
+}
+*/
+/* @media screen and (min-width: 698px) {
+  div {
+    background-color: blue;
+  }
+} */
+
+/*
+if(ekranUzunlugu >= 1280px){
+
+}
+*/
+/* @media screen and (min-width: 1280px) {
+  div {
+    background-color: red;
+  }
+} */
