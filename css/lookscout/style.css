@@ -569,6 +569,15 @@ html {
   #product-features-section > div > .content > .left-side > ul {
     margin-top: 24px;
   }
+  #customer-say-section > div > header {
+    width: 100%;
+  }
+  #customer-say-section > div > .cards {
+    gap: 24px;
+  }
+  #customer-say-section > div > .cards > .card {
+    width: calc(50% - 12px);
+  }
 }
 
 @media screen and (max-width: 672px) {
@@ -661,5 +670,25 @@ html {
     font-size: 28px;
     line-height: 36px; /* 128.571% */
     letter-spacing: -0.56px;
+  }
+  #customer-say-section {
+    padding: 32px 0;
+  }
+  #customer-say-section > div > .cards {
+    margin: 40px 0;
+  }
+  #customer-say-section > div > header > h1 {
+    font-size: 24px;
+    line-height: 32px; /* 133.333% */
+    letter-spacing: -0.48px;
+  }
+  #customer-say-section > div > header > p {
+    font-size: 16px;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.1px;
+  }
+  #customer-say-section > div > .cards > .card {
+    width: 100%;
+    height: fit-content;
   }
 }
