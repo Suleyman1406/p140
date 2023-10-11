@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Work Sans", sans-serif;
+}
+
+:root {
+  --color-green-100: #74c69d;
+  --color-green-800: #16452e;
+  --color-white-100: #fff;
+  --color-white-75: rgba(255, 255, 255, 0.75);
+  --color-dark: #212529;
+}
+
+.container {
+  width: 1180px;
+  margin: auto;
+}
+
+#landing-section {
+  padding-top: 35px;
+  padding-bottom: 82.87px;
+  background-color: var(--color-green-100);
+}
+
+#landing-section > header > .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#landing-section > header > .navbar > ul {
+  list-style-type: none;
+  display: flex;
+  column-gap: 30px;
+}
+#landing-section > header > .navbar > #menu-open-icon {
+  display: none;
+}
+#landing-section > header > .navbar > ul > li > a {
+  color: var(--color-white-100);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 125%; /* 25px */
+  text-decoration: none;
+  transition: 0.3s;
+}
+#landing-section > header > .navbar > ul > li > a:hover {
+  color: var(--color-green-800);
+}
+
+@media screen and (max-width: 1180px) {
+  .container {
+    width: 375px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  #landing-section > header > .navbar > ul {
+    display: none;
+  }
+  #landing-section > header > .navbar > #menu-open-icon {
+    display: initial;
+  }
+}
+
+#landing-section .hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+#landing-section .hero .content {
+  width: 416px;
+}
+#landing-section .hero .content h3 {
+  color: var(--color-white-100);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 125%; /* 20px */
+  letter-spacing: 5px;
+}
+
+#landing-section .hero .content h1 {
+  color: var(--color-white-100);
+  font-family: "Crimson Text";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 50px */
+  margin: 15px 0;
+}
+
+#landing-section .hero .content p {
+  color: var(--color-white-75);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 125%; /* 18.75px */
+  margin-bottom: 25px;
+}
+
+#landing-section .hero .content button {
+  background-color: var(--color-white-100);
+  padding: 12px 48px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 125%; /* 25px */
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#landing-section .hero .content button:hover {
+  background-color: var(--color-green-800);
+  color: white;
+}
+
+@media screen and (max-width: 1180px) {
+  #landing-section .hero {
+    flex-direction: column-reverse;
+    row-gap: 30px;
+  }
+  #landing-section .hero > img {
+    width: 335px;
+    height: 197px;
+  }
+  #landing-section .hero .content {
+    width: 100%;
+  }
+  #landing-section .hero .content > h3 {
+    font-size: 16px;
+    line-height: 125%; /* 20px */
+    letter-spacing: 5px;
+  }
+  #landing-section .hero .content > h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 125%; /* 35px */
+  }
+  #landing-section .hero .content > p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 125%; /* 18.75px */
+  }
+  #landing-section {
+    padding-top: 17px;
+    padding-bottom: 40.39px;
+  }
+}
+
+#partners-section {
+  padding: 60px 0 73px;
+}
+
+#partners-section > div > header {
+  width: 411px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  margin: auto;
+  text-align: center;
+}
+#partners-section > div > header h3 {
+  color: var(--color-green-100);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 125%; /* 20px */
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+#partners-section > div > header h2 {
+  font-family: "Crimson Text";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 125%; /* 50px */
+}
+
+#partners-section > div > header p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 125%; /* 25px */
+}
+
+#partners-section > div > .company-container {
+  margin: 55px 0;
+  display: flex;
+  justify-content: space-between;
+}
+#partners-section > div > .company-container > img {
+  object-fit: contain;
+}
+/* #partners-section > div > .learn-more-container {
+  text-align: center;
+} */
+
+#partners-section > div > .learn-more-container > button {
+  padding: 12px 29.5px;
+  border-radius: 5px;
+  background-color: var(--color-dark);
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 125%; /* 25px */
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: 0.3s;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  /* background: linear-gradient(
+    90deg,
+    rgba(22, 36, 0, 1) 32%,
+    rgba(9, 121, 119, 1) 52%,
+    rgba(255, 0, 0, 1) 75%
+  ); */
+}
+
+#partners-section > div > .learn-more-container > button:hover {
+  border-color: var(--color-dark);
+  background-color: transparent;
+  color: var(--color-dark);
+}
+
+@media screen and (max-width: 1180px) {
+  #partners-section > div > header {
+    width: 100%;
+  }
+  #partners-section > div > header > h3 {
+    font-size: 16px;
+    line-height: 125%; /* 20px */
+    letter-spacing: 5px;
+  }
+  #partners-section > div > header > h2 {
+    font-size: 24px;
+    line-height: 125%; /* 30px */
+  }
+  #partners-section > div > header > p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 125%; /* 25px */
+  }
+
+  #partners-section > div > .company-container {
+    width: 100%;
+    row-gap: 40px;
+    column-gap: 40px;
+    padding-bottom: 10px;
+    /* flex-direction: column; */
+    overflow: auto;
+    /* transform: translateX(calc(100vw / -2)); */
+    margin: 55px auto;
+  }
+
+  #partners-section > div > .company-container::-webkit-scrollbar {
+    width: 10px;
+    height: 6px;
+  }
+
+  /* Track */
+  #partners-section > div > .company-container::-webkit-scrollbar-track {
+    background: #8e0e0e;
+    border-radius: 10px;
+    /* width: 10px; */
+  }
+
+  /* Handle */
+  #partners-section > div > .company-container::-webkit-scrollbar-thumb {
+    background: #74c69d;
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  #partners-section > div > .company-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
