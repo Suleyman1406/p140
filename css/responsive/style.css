@@ -49,3 +49,32 @@ if(ekranUzunlugu >= 1280px){
     background-color: red;
   }
 } */
+
+/* html {
+  font-size: 20px;
+}
+
+p {
+  font-size: 2rem;
+}
+
+span {
+  font-size: 0.5rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+@media screen and (max-width: 1180px) {
+  html {
+    font-size: 16px;
+  }
+} */
+
+div {
+  font-size: 16px;
+}
+p {
+  font-size: 2em;
+}
