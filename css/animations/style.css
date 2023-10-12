@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 100px;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: pink;
+  /* margin-bottom: 20px; */
+  /* animation: goRight 4s;
+  border: 12px solid pink;
+  border-left: none;
+  border-radius: 50%;
+  animation: spin 0.9s;
+  animation-timing-function: linear;
+  animation-iteration-count: 5; */
+  /* animation: spin 2s ; */
+  /* animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite; */
+}
+
+/* @keyframes goToRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(200px);
+  }
+} */
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* .box {
+  animation-name: getGezGel;
+  animation-duration: 0.2s;
+  animation-delay: 5s;
+} */
+
+/* @keyframes goRightAndReverse {
+  0% {
+    transform: translateX(0);
+  }
+  95% {
+    transform: translateX(200px);
+    background-color: black;
+  }
+  100% {
+    transform: translateX(0);
+    background-color: blue;
+  }
+} */
+
+/* @keyframes goRightAndBottom {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(200px);
+  }
+  100% {
+    transform: translate(0, 200px);
+  }
+} */
+
+/* @keyframes getGezGel {
+  0% {
+    transform: translate(0, 0) rotate(0);
+  }
+  25% {
+    transform: translate(200px, 0) rotate(360deg);
+  }
+  50% {
+    transform: translate(200px, 200px) rotate(360deg);
+  }
+  75% {
+    transform: translate(0, 200px) rotate(360deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(299880deg);
+  }
+} */
+/* .box {
+  font-size: 26px;
+}
+
+.box:nth-child(1) {
+  animation-timing-function: linear;
+}
+.box:nth-child(2) {
+  animation-timing-function: ease;
+}
+.box:nth-child(3) {
+  animation-timing-function: ease-in;
+}
+.box:nth-child(4) {
+  animation-timing-function: ease-out;
+}
+.box:nth-child(5) {
+  animation-timing-function: ease-in-out;
+}
+.box:nth-child(6) {
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+.box:nth-child(7) {
+}
+.box:nth-child(8) {
+}
+
+@keyframes goRight {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(900px);
+  }
+} */
+
+.box {
+  background-color: pink;
+  /* animation-fill-mode: forwards; */
+  /* animation-delay: 1s; */
+  /* animation-play-state: paused; */
+  animation-iteration-count: infinite;
+  /* animation-play-state: paused; */
+  color: aqua;
+}
+.box:hover {
+  /* animation: herhansiBirsey 3s; */
+  background-color: #f3ec78;
+  background-image: linear-gradient(45deg, #f3ec78, #af4261);
+  background-size: 100%;
+}
+@keyframes herhansiBirsey {
+  0% {
+    /* transform: translate(0); */
+    background-color: blue;
+  }
+  50% {
+    /* transform: translate(300px); */
+    background-color: red;
+  }
+  100% {
+    background-color: blue;
+  }
+}
