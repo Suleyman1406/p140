@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 100px;
+}
+
+.card {
+  width: 200px;
+  height: 100px;
+  background-color: aquamarine;
+  transition: 1s;
+  backface-visibility: hidden;
+}
+
+.card-container:hover .card {
+  transform: rotateY(180deg);
+}

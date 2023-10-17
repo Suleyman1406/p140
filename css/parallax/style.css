@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero-section {
+  height: 600px;
+  background-image: url("https://good-nature-blog-uploads.s3.amazonaws.com/uploads/2022/01/good-nature-homepage-hero_2-scaled.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
+.content-section {
+  background-color: aquamarine;
+  padding: 50px;
+}
+
+.product-section {
+  height: 600px;
+  background-image: url("https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_640.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+}
