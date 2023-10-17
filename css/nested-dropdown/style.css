@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 0 32px;
+  column-gap: 30px;
+  background-color: rgb(91, 91, 250);
+}
+
+.navbar > div > a {
+  height: 43px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 30px;
+  color: white;
+}
+
+.navbar > div > a:hover {
+  background-color: rgba(222, 222, 222, 0.3);
+}
+
+.navbar > div {
+  position: relative;
+}
+.dropdown-trigger:hover ~ .dropdown,
+.dropdown:hover {
+  display: block;
+}
+
+.dropdown {
+  width: 180px;
+  position: absolute;
+  top: 43px;
+  left: -20px;
+  display: flex;
+  display: none;
+  flex-direction: column;
+  background-color: rgb(91, 91, 250);
+}
+
+.dropdown a {
+  display: inline-block;
+  width: 100%;
+  padding: 16px 20px;
+  color: white;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.dropdown a:hover {
+  background-color: rgba(222, 222, 222, 0.3);
+}
+
+.nested {
+  position: relative;
+}
+
+.nested > .dropdown {
+  top: 0;
+  left: 100%;
+}
