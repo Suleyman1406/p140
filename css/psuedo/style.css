@@ -58,3 +58,147 @@ p::selection {
 /* p{
   user-select: none;
 } */
+
+/* div::before {
+  content: "Desktop string";
+  color: red;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1180px) {
+  div::before {
+    content: "Mobile string";
+  }
+} */
+/* 
+div::after {
+  content: "After str";
+  color: green;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 100px;
+}
+/* 
+button {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid black;
+  position: relative;
+  border-radius: 10px;
+  filter: blur(2px);
+  transition: 0.3s;
+}
+
+button span {
+  display: inline-block;
+  background-color: pink;
+  padding: 20px 60px;
+  position: relative;
+  z-index: 2;
+  border-radius: 10px;
+}
+
+button::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 64px;
+  background-color: rgba(255, 213, 0, 0.66);
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  transition: 0.3s;
+}
+button:hover::after {
+  left: 2px;
+  top: 2px;
+}
+button:hover {
+  filter: blur(0px);
+} */
+
+/* button {
+  padding: 20px 60px;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+button::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 25px;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  border-top: 5px solid yellowgreen;
+  border-left: 5px solid yellowgreen;
+  transition: 0.4s;
+}
+
+button:hover::before,
+button:hover::after {
+  width: calc(100% + 15px);
+  height: 83px;
+}
+
+button::after {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 25px;
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  border-right: 5px solid yellowgreen;
+  border-bottom: 5px solid yellowgreen;
+  transition: 0.4s;
+} */
+
+button {
+  padding: 20px 60px;
+  background-color: transparent;
+  border: 2px solid goldenrod;
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: relative;
+  transition: 0.4s;
+}
+button span {
+  position: relative;
+  z-index: 1;
+}
+
+button:hover {
+  background-color: red;
+}
+
+/* button::before {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 0;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: 0.4s;
+}
+
+button:hover::before {
+  height: 34px;
+} */
