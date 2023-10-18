@@ -1,0 +1,68 @@
+/*
+$bg-color: rgb(208, 208, 188);
+$primary-border: 2px dashed green;
+
+div {
+  background-color: red;
+}
+
+body {
+  background-color: $bg-color;
+  border: $primary-border;
+  padding: 26px;
+}
+
+div {
+  background-color: $bg-color;
+}
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 40px;
+  border-bottom: 2px solid red;
+}
+@media screen and (max-width: 1280px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+}
+.navbar .nav-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+@media screen and (max-width: 1280px) {
+  .navbar .nav-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar .nav-items {
+    display: none;
+  }
+}
+.navbar .nav-items a {
+  font-size: 14px;
+  color: gray;
+  text-decoration: none;
+}
