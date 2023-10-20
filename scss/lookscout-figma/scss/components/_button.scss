@@ -1,0 +1,81 @@
+.btn-primary {
+  @include button-formatter(
+    $primary-600,
+    12px 18px,
+    $base-white,
+    0px 1px 2px 0px rgba(16, 24, 40, 0.04),
+    none,
+    6px,
+    15px,
+    600,
+    22px
+  );
+
+  @include for-size(tablet) {
+    @include button-formatter(
+      $primary-600,
+      8px 16px,
+      $base-white,
+      0px 1px 2px 0px rgba(16, 24, 40, 0.04),
+      none,
+      6px,
+      14px,
+      600,
+      20px
+    );
+  }
+  @include for-size(mobile) {
+    @include button-formatter(
+      $primary-600,
+      6px 12px,
+      $base-white,
+      0px 1px 2px 0px rgba(16, 24, 40, 0.04),
+      none,
+      6px,
+      12px,
+      600,
+      16px
+    );
+  }
+}
+
+.btn-secondary {
+  @include button-formatter(
+    transparent,
+    0,
+    $primary-600,
+    0px 1px 2px 0px rgba(16, 24, 40, 0.04),
+    none,
+    6px,
+    15px,
+    600,
+    22px
+  );
+
+  @include for-size(tablet) {
+    @include button-formatter(
+      transparent,
+      0,
+      $primary-600,
+      0px 1px 2px 0px rgba(16, 24, 40, 0.04),
+      none,
+      6px,
+      14px,
+      600,
+      20px
+    );
+  }
+  @include for-size(mobile) {
+    @include button-formatter(
+      transparent,
+      6px 12px,
+      $primary-600,
+      0px 1px 2px 0px rgba(16, 24, 40, 0.04),
+      none,
+      6px,
+      12px,
+      600,
+      16px
+    );
+  }
+}

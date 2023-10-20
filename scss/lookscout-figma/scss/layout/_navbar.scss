@@ -1,2 +1,61 @@
-.navbar {
+.navbar-wrapper {
+  padding: 20px 0;
+  border-bottom: 1px solid $gray-300;
+
+  .navbar {
+    @include container;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include for-size(tablet) {
+      width: 100%;
+      padding: 0 16px;
+    }
+
+    .navbar-left {
+      display: flex;
+      align-items: center;
+      column-gap: 64px;
+
+      > nav {
+        display: flex;
+        column-gap: 32px;
+        align-items: center;
+
+        @include for-size(tablet) {
+          display: none;
+        }
+
+        > a {
+          @include text-formatter(
+            $base-white,
+            15px,
+            600,
+            22px,
+            $hoverColor: $primary-600
+          );
+          text-decoration: none;
+        }
+      }
+    }
+
+    .navbar-right {
+      display: flex;
+      align-items: center;
+      column-gap: 24px;
+
+      svg {
+        display: none;
+      }
+      @include for-size(tablet) {
+        button {
+          display: none;
+        }
+        svg {
+          display: initial;
+        }
+      }
+    }
+  }
 }

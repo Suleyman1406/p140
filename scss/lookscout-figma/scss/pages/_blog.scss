@@ -1,8 +1,44 @@
-.blog-header {
-  height: 500px;
-  background-image: url("../assets/images/blog/landing-bg-2.png"),
-    url("../assets/images/blog/landing-bg-1.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
+#blog {
+  .blog-header {
+    background-image: url("../assets/images/blog/landing-bg-2.png"),
+      url("../assets/images/blog/landing-bg-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+
+    @include for-size(tablet) {
+      background-image: url("../assets/images/blog/landing-bg-tablet-2.png"),
+        url("../assets/images/blog/landing-bg-tablet-1.png");
+    }
+    @include for-size(mobile) {
+      background-image: url("../assets/images/blog/landing-bg-mobile-2.png"),
+        url("../assets/images/blog/landing-bg-mobile-1.png");
+    }
+
+    .landing-section {
+      padding: 80px 0 92px;
+      .text-wrapper {
+        margin: auto;
+        width: 640px;
+        text-align: center;
+
+        @include for-size(mobile) {
+          @include container();
+        }
+
+        h1 {
+          @include text-formatter($neutral-200, 52px, 700, 60px);
+          letter-spacing: -0.52px;
+          margin-bottom: 24px;
+
+          @include for-size(mobile) {
+            @include text-formatter($neutral-200, 36px, 600, 44px);
+          }
+        }
+        h4 {
+          @include text-formatter($neutral-200, 18px, 400, 26px);
+        }
+      }
+    }
+  }
 }

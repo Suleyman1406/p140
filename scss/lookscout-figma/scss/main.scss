@@ -2,5 +2,11 @@
 @import "./base/typography";
 
 @import "./utils/variables";
+@import "./utils/mixins";
+
+@import "./components/button";
+
+@import "./layout/navbar";
 
 @import "./pages/blog";
+@import "./pages/contact";
