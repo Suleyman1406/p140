@@ -216,3 +216,41 @@
 // });
 
 // console.log(filteredNumbers);
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7];
+
+// let result = numbers.every((item) => {
+//   return item > 0;
+// });
+
+// console.log(result);
+
+// let numbers = [1, 2, 3, 4, 5, 6, -7];
+
+// let result = numbers.some((item) => {
+//   return item < 0;
+// });
+
+// console.log(result);
+
+// let myArr = [3, 7, 2, 1, 99, -2, 33];
+
+// myArr.sort((a, b) => {
+//   return b - a;
+// });
+
+// console.log(myArr);
+
+// let myArr = [3, 7, 2, 1, 99, -2, 33];
+
+// myArr.sort((a, b) => {
+//   if (a > b) {
+//     return -1;
+//   } else if (a < b) {
+//     return 1;
+//   } else {
+//     return 0;
+//   }
+// });
+
+// console.log(myArr);
