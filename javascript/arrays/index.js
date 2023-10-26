@@ -70,3 +70,149 @@
 // console.log(myArr);
 
 // console.log(String([1, 2, 3]));
+
+// --------------------------------------
+// ARRAY METHODS
+
+// let numbers = [3, 8, 9, 12, 1];
+
+// let res = numbers.splice(2, 0);
+
+// console.log("res", res);
+// console.log(numbers);
+
+// let numbers = [3, 8, 9, 12, 1];
+
+// numbers.splice(2, 2, 66, 33, 44, 78, 22);
+
+// console.log(numbers);
+
+// let numbers = [3, 8, 9, 12, 1];
+
+// console.log(numbers.includes(12));
+
+// let myArr = [1, 2, 3];
+// let myNewArr = [7, 8, 9, 12];
+
+// let res = myArr.concat(myNewArr);
+// console.log(res);
+// console.log(myArr);
+// console.log(myNewArr);
+
+// let myArr = ["hello", "?", "how", "are", "you", "today", "?"];
+
+// let index = myArr.indexOf("??");
+
+// if (index !== -1) {
+//   myArr.splice(index, 1);
+//   console.log(myArr);
+// } else {
+//   console.log("element tapilmadi!");
+// }
+
+// console.log(myArr.indexOf("?", 3));
+// console.log(myArr.lastIndexOf("?"));
+
+// let items = [1, 2, 3, 4, 5];
+
+// let res = items.join("nurane");
+// console.log(res.split(""));
+
+// let str = "055 555-55-55";
+// let phoneItems = str.split(" ");
+// console.log(phoneItems[1].split("-"));
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7];
+
+// for (let number of numbers) {
+//   console.log((number * number) / 2);
+// }
+
+// numbers.forEach((value) => {
+//   console.log((value * value) / 2);
+// });
+
+// let numbers = [1, 2, 3, 4];
+
+// let res = numbers.forEach((value, idx, items) => {
+//   console.log(value, idx, items);
+// });
+
+// console.log(res); // undefined
+
+// let numbers = [1, 2, 3, 4];
+
+// let res = numbers.map((item, idx, arr) => {
+//   if (item == 2) {
+//     return "hello";
+//   }
+//   // return item * 2;
+// });
+// console.log("res", res);
+
+// console.log(numbers);
+
+// let characters = ["1", "2", "3", "4"];
+
+// let res = characters.map((item) => {
+//   return +item;
+// });
+
+// console.log("res", res);
+// console.log(characters);
+
+// let numbers = [1, 2, 3, 4];
+
+// let res = numbers.map((item, idx) => {
+//   return item * item;
+// });
+
+// console.log("res", res);
+
+// let names = ["suleyman", "zerbeli", "elnur", "cahandar"];
+
+// let uppercaseNames = names.map((item, idx, arr) => {
+//   return item.toUpperCase();
+// });
+
+// console.log(uppercaseNames);
+// console.log(names);
+
+// let numbers = [1, 2, 3, 4];
+
+// let res = numbers.map((item) => item * item);
+// let res = numbers.map((item, idx) => {
+//   console.log(item)
+//   return item * item;
+//  });
+
+// console.log("res", res);
+
+// let arrFunc = (a) => a * 2;
+
+// let res = arrFunc(12);
+// console.log(res);
+
+// let numbers = [0, 3, 5, 7, 8, 9, 10];
+
+// let res = numbers.find((item, idx) => {
+//   return item;
+// });
+
+// console.log(res);
+
+// let numbers = [3, 5, 7, 8, 9, 10];
+
+// let res = numbers.findIndex((item, idx) => {
+//   return !item;
+// });
+
+// console.log(res);
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+
+// let filteredNumbers = numbers.filter((item) => {
+//   return true && false;
+// });
+
+// console.log(filteredNumbers);
