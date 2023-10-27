@@ -142,3 +142,74 @@ let students = [
 // }, 0);
 
 // console.log(res);
+
+// let myKey = "test1";
+// let myValue = "hello";
+
+// let student = {
+//   [myKey]: myValue,
+// name: "suleuman",
+// "full-name": "dadashov",
+// age: 12,
+// };
+
+// student[myKey] = myValue;
+
+// console.log(student);
+// let myPropertyname = "full-name";
+
+// console.log(student[myPropertyname]);
+
+// let age = 16;
+
+// let person = {
+//   age,
+//   surname: "dadashov",
+// };
+
+// person.age = 18;
+
+// let student = {
+//   surname: "asd",
+//   // age:age,
+//   age,
+// };
+// console.log(person);
+// console.log(student);
+
+// let student1 = {
+//   name: "Leman",
+//   surname: "Huseynova",
+//   age: 16
+// }
+// let student2 = student1;
+
+// student1.age = 17;
+
+// console.log(student2.age);
+
+// function change(myObj) {
+//   myObj = {
+//     name: "Suleyman",
+//     age: 11,
+//   };
+// }
+
+// let student = {
+//   // #333
+//   name: "Suleyman",
+//   age: 16,
+// };
+
+// change(student);
+
+// console.log(student.age);
+
+// let car = {
+//   model: "Audi RS8",
+//   price: 333,
+//   isNew: false,
+// };
+
+// console.log(Object.keys(car));
+// console.log(Object.values(car));

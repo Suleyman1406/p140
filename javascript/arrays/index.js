@@ -254,3 +254,53 @@
 // });
 
 // console.log(myArr);
+
+// let myArr = [1, 2, 3, 4, 5, 6, 7, 9];
+
+// console.log(myArr.slice(2, 4));
+// console.log(myArr);
+
+let students = [
+  {
+    name: "Suleynman",
+    surname: "Dada",
+    age: 12,
+  },
+  {
+    name: "Vusal",
+    surname: "Hesenov",
+    age: 20,
+  },
+  {
+    name: "Vusal",
+    surname: "Yusufov",
+    age: 11,
+  },
+  {
+    name: "Aysel",
+    surname: "Abbasova",
+    age: 4,
+  },
+  {
+    name: "Rustem",
+    surname: "Rzayev",
+    age: 30,
+  },
+];
+
+// console.log(students);
+// console.log("-----------------------");
+
+// students.sort((student1, student2) => {
+//   return student2.age - student1.age;
+// });
+
+// console.log("Sorted Students: ");
+// console.log(students);
+
+// let res = students
+//   .reduce((prev, item, idx, arr) => {
+//     return prev + item.age / arr.length;
+//   }, 0)
+//   .toFixed(1);
+// console.log(res);
