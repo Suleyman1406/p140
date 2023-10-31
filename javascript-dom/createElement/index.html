@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* .card {
+        padding: 20px;
+        background-color: bisque;
+        border-radius: 10px;
+        border: 2px double black;
+      } */
+
+      .dropdown-container {
+        width: 200px;
+        position: relative;
+      }
+      .dropdown-trigger {
+        width: 100%;
+        height: 36px;
+        border-radius: 6px;
+        background-color: rgb(95, 58, 129);
+        transition: 1s;
+      }
+
+      .dropdown-container.open .dropdown-trigger {
+        background-color: rgb(161, 215, 197);
+      }
+      .dropdown-container.open .dropdown-menu {
+        display: initial;
+      }
+
+      .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 40px;
+        width: 100%;
+        height: 150px;
+        border-radius: 6px;
+        background-color: rgb(94, 196, 155);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <ul>
+      <li>Alma</li>
+      <li>Heyva</li>
+      <li>Nar</li>
+      <li>Gilas</li>
+      <li>Visne</li>
+    </ul> -->
+
+    <!-- <div class="container hello test">Lorem, ipsum.</div> -->
+
+    <div class="dropdown-container">
+      <div class="dropdown-trigger"></div>
+      <div class="dropdown-menu"></div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

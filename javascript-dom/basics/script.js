@@ -27,3 +27,17 @@
 //     .previousElementSibling.nextElementSibling.nextElementSibling
 //     .nextElementSibling
 // );
+
+// const wrapperElement = document.querySelector("#wrapper");
+
+// wrapperElement.innerHTML = `
+//   <h1>
+//     Hello
+//   </h1>
+//   `;
+
+// wrapperElement.outerHTML = `
+//   <h1>
+//     Hello
+//   </h1>
+//   `;
