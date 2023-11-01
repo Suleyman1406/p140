@@ -50,22 +50,31 @@ const inputElement = document.querySelector("input");
 //   let value = e.target.value;
 // });
 
-const button = document.querySelector("button");
-const span = document.querySelector("span");
-const div = document.querySelector("div");
-const body = document.querySelector("body");
+// const button = document.querySelector("button");
+// const span = document.querySelector("span");
+// const div = document.querySelector("div");
+// const body = document.querySelector("body");
 
-button.addEventListener("click", (e) => {
-  console.log("button clicked");
-});
-span.addEventListener("click", (e) => {
-  e.stopPropagation();
-  console.log("span clicked");
-});
-div.addEventListener("click", (e) => {
-  e.stopPropagation();
-  console.log("div clicked");
-});
-body.addEventListener("click", () => {
-  console.log("body clicked");
-});
+// button.addEventListener("click", (e) => {
+//   console.log("button clicked");
+// });
+// span.addEventListener("click", (e) => {
+//   e.stopPropagation();
+//   console.log("span clicked");
+// });
+// div.addEventListener("click", (e) => {
+//   e.stopPropagation();
+//   console.log("div clicked");
+// });
+// body.addEventListener("click", () => {
+//   console.log("body clicked");
+// });
+// const button = document.querySelector("button");
+
+// const onBtnClick = () => {
+//   console.log("clicked");
+// };
+
+// button.addEventListener("click", onBtnClick);
+
+// button.removeEventListener("click", onBtnClick);
