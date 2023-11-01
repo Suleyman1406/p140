@@ -49,3 +49,23 @@ const inputElement = document.querySelector("input");
 // inputElement.addEventListener("keyup", (e) => {
 //   let value = e.target.value;
 // });
+
+const button = document.querySelector("button");
+const span = document.querySelector("span");
+const div = document.querySelector("div");
+const body = document.querySelector("body");
+
+button.addEventListener("click", (e) => {
+  console.log("button clicked");
+});
+span.addEventListener("click", (e) => {
+  e.stopPropagation();
+  console.log("span clicked");
+});
+div.addEventListener("click", (e) => {
+  e.stopPropagation();
+  console.log("div clicked");
+});
+body.addEventListener("click", () => {
+  console.log("body clicked");
+});
