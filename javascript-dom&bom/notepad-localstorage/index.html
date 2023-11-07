@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+      integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script defer src="./script.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: rgb(232, 238, 192);
+      }
+      .wrapper {
+        width: 500px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      .wrapper input,
+      .wrapper textarea {
+        width: 100%;
+        margin-top: 30px;
+        padding: 10px 12px;
+        border-radius: 6px;
+        border: 2px solid rgb(107, 206, 87);
+      }
+      .wrapper .note-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+      .wrapper .note-form .color-container {
+        display: flex;
+        column-gap: 10px;
+      }
+      .wrapper .note-form .color-container .color {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        border: 2px solid transparent;
+      }
+      .wrapper .note-form .color-container .color.active {
+        border-color: white;
+      }
+
+      .wrapper .note-form .form-bottom-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 30px;
+      }
+      .wrapper .note-form .form-bottom-container button {
+        padding: 10px;
+        background-color: green;
+        color: white;
+        border-radius: 6px;
+        border: none;
+        cursor: pointer;
+      }
+      .note-container {
+        width: 900px;
+        margin: auto;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 30px;
+      }
+      .note-container .note {
+        position: relative;
+        width: 200px;
+        height: 300px;
+        padding: 10px;
+        border: 2px dashed green;
+      }
+      .note-container .note h2 {
+        border-bottom: 1px solid gray;
+      }
+      .note-container .note img {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        padding: 5px;
+        cursor: pointer;
+        transition: 0.2s;
+      }
+      .note-container .note img:hover {
+        background-color: rgb(206, 206, 206, 0.4);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Welcome to Our Notepad</h1>
+      <form class="note-form">
+        <input
+          type="text"
+          placeholder="Write your note title..."
+          class="note-title"
+        />
+        <textarea
+          class="note-description"
+          cols="30"
+          rows="10"
+          placeholder="Write your note..."
+        ></textarea>
+        <div class="form-bottom-container">
+          <div class="color-container">
+            <button
+              type="button"
+              class="color"
+              style="background-color: rgb(240, 98, 146)"
+            ></button>
+            <button
+              type="button"
+              class="color"
+              style="background-color: rgb(186, 104, 200)"
+            ></button>
+            <button
+              type="button"
+              class="color"
+              style="background-color: rgb(79, 195, 247)"
+            ></button>
+            <button
+              type="button"
+              class="color"
+              style="background-color: rgb(255, 213, 79)"
+            ></button>
+            <button
+              type="button"
+              class="color"
+              style="background-color: rgb(174, 213, 129)"
+            ></button>
+          </div>
+          <button>Save</button>
+        </div>
+      </form>
+      <input
+        type="text"
+        class="note-search"
+        placeholder="Search with title and description"
+      />
+    </div>
+    <div class="note-container"></div>
+  </body>
+</html>
