@@ -1,0 +1,51 @@
+main#home-main-section {
+  padding-top: 50px;
+  padding-bottom: 150px;
+
+  .content {
+    @include container();
+    display: grid;
+    grid-template-columns: 270px 1fr;
+    column-gap: 32px;
+    .filters {
+      width: 100%;
+      > div {
+        margin-bottom: 30px;
+      }
+      .categories {
+        height: 371px;
+        background-color: #f6f7f8;
+      }
+      .prices {
+        height: 144px;
+        background-color: #f6f7f8;
+      }
+      .colors {
+        height: 123px;
+        background-color: #f6f7f8;
+      }
+      .brands {
+        height: 245px;
+        background-color: #f6f7f8;
+      }
+    }
+    .products {
+      width: 100%;
+
+      .advertisement {
+        height: 300px;
+        background-color: #40bfff;
+      }
+      .table-options {
+        height: 58px;
+        margin: 25px 0;
+        background-color: #f6f7f8;
+      }
+      .products-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 34.5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@mixin for-size($screen) {
+  @if $screen == mobile {
+    @media screen and (max-width: $desktop-container-width) {
+      @content;
+    }
+  }
+}
+
+@mixin container() {
+  width: $desktop-container-width;
+  margin: auto;
+
+  @include for-size(mobile) {
+    width: $mobile-container-width;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}

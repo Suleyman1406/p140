@@ -1,0 +1,28 @@
+header#pages-header {
+  padding: 25px 0;
+  border-bottom: 2px solid #fafafb;
+  .content {
+    @include container();
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .basket-navigation {
+      position: relative;
+
+      > span {
+        position: absolute;
+        top: -6px;
+        right: -6px;
+        width: 16px;
+        height: 16px;
+        background-color: #fb7181;
+        color: white;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        font-size: 12px;
+      }
+    }
+  }
+}
