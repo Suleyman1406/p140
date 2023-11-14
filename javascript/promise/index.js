@@ -1,52 +1,77 @@
-// let musics = [];
+// // let musics = [];
 
-// setTimeout(() => {
-//   musics = ["Nurane", "Qemerim", "Heyvagul", "Dilberim"];
-// }, 1000);
+// // setTimeout(() => {
+// //   musics = ["Nurane", "Qemerim", "Heyvagul", "Dilberim"];
+// // }, 1000);
 
-// const promise = new Promise((resolve, reject) => {
-//   setTimeout(() => {
-//     if (musics.length === 0) {
-//       reject(new Error("Mahni yoxdur!"));
+// // const promise = new Promise((resolve, reject) => {
+// //   setTimeout(() => {
+// //     if (musics.length === 0) {
+// //       reject(new Error("Mahni yoxdur!"));
+// //     } else {
+// //       resolve(musics);
+// //     }
+// //   }, 2000);
+// // });
+
+// // console.log(promise);
+
+// // promise
+// //   .then((data) => {
+// //     console.log("cavab geldi", data);
+// //   })
+// //   .catch((err) => {
+// //     console.log("error geldi", err);
+// //   })
+// //   .finally(() => {
+// //     console.log("bitti");
+// //   });
+
+// function getPromise(result) {
+//   return new Promise((resolve, reject) => {
+//     if (result) {
+//       resolve("Resolved");
 //     } else {
-//       resolve(musics);
+//       reject("salam");
 //     }
-//   }, 2000);
-// });
+//   });
+// }
 
-// console.log(promise);
+// let gozleyen = getPromise(true);
 
-// promise
+// gozleyen
+//   .then((result) => {
+//     console.log(result);
+//     return getPromise(true);
+//   })
 //   .then((data) => {
-//     console.log("cavab geldi", data);
+//     console.log("resolved", data);
 //   })
 //   .catch((err) => {
-//     console.log("error geldi", err);
-//   })
-//   .finally(() => {
-//     console.log("bitti");
+//     console.log("error", err);
 //   });
 
-function getPromise(result) {
-  return new Promise((resolve, reject) => {
-    if (result) {
-      resolve("Resolved");
-    } else {
-      reject("salam");
-    }
-  });
-}
+// async function printSomething() {
+//   try {
+//     const promise = new Promise((res, rej) => {
+//       setTimeout(() => {
+//         rej("completed");
+//       }, 3000);
+//     });
 
-let gozleyen = getPromise(true);
+//     let res = promise;
+//     console.log("result", res);
+//     return promise;
+//   } catch (err) {
+//     console.log("err", err);
+//   }
+// }
 
-gozleyen
-  .then((result) => {
-    console.log(result);
-    return getPromise(true);
-  })
-  .then((data) => {
-    console.log("resolved", data);
-  })
-  .catch((err) => {
-    console.log("error", err);
-  });
+// try {
+// let a = printSomething();
+// a.catch((err) => {
+//   console.log(err);
+// });
+// } catch (err) {
+//   console.log(err);
+// }
