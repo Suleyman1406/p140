@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail</title>
+  </head>
+  <body>
+    <p></p>
+    <script>
+      const searchParams = new URLSearchParams(window.location.search);
+      const id = searchParams.get("id");
+      if (!id) {
+        window.open("./index.html", "_self");
+      }
+
+      function getProductFromApi(id) {
+        // const response = await fetch(
+        //   `https://northwind.now.sh/api/products/${id}`
+        // );
+        // if (response.status !== 200) {
+        //   window.open("./index.html", "_self");
+        // }
+        // const data = await response.json();
+        // const pElement = document.querySelector("p");
+
+        // pElement.textContent = JSON.stringify(data);
+        fetch(`https://northwind.now.sh/api/products/${id}`)
+          .then((response) => {
+            if (response.status !== 200) {
+              window.open("./index.html", "_self");
+            }
+            return response.json();
+          })
+          .then((data) => {
+            const pElement = document.querySelector("p");
+            pElement.textContent = JSON.stringify(data);
+          });
+      }
+
+      getProductFromApi(id);
+    </script>
+  </body>
+</html>
