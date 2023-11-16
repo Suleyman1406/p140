@@ -82,7 +82,7 @@ app.get("/api", (req, res) => {
 });
 
 app.get("/api/products", (req, res) => {
-  const { searchStr, category } = req.body;
+  const { searchStr, category } = req.query;
 
   const filteredProducts = products
     .filter((p) =>
@@ -125,10 +125,10 @@ app.get("/api/products/:id", (req, res) => {
 
 app.post("/api/products", (req, res) => {
   try {
-    const { name, price, category, inStock, imgUrl } = req.body;
-    if (!name || !price || !category || !inStock || !imgUrl) {
+    const { name, price, category, inStock, imageUrl } = req.body;
+    if (!name || !price || !category || !inStock || !imageUrl) {
       return res.status(400).json({
-        error: "Name, price, category, inStock, imgUrl fields are required!",
+        error: "Name, price, category, inStock, imageUrl fields are required!",
       });
     }
 
@@ -138,10 +138,13 @@ app.post("/api/products", (req, res) => {
       price,
       category,
       inStock,
-      imgUrl,
+      imageUrl,
     };
     products.push(product);
-    res.status(201).json(product);
+
+    setTimeout(() => {
+      res.status(201).json(product);
+    }, 5000);
   } catch (error) {
     res.status(500).json({ error: `Internal Server Error! ${error}` });
   }
