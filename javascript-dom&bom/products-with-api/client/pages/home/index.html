@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script defer src="../../common/constants/index.js"></script>
+  <script defer src="./script.js"></script>
+  <style>
+    table th, table td{
+      padding: 10px;
+    }
+    tbody tr td .status{
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background-color: red;
+      border-radius: 50%;
+      border: none;
+    }
+    tbody tr td .status.inStock{
+      background-color: green;
+    }
+    tbody tr td img{
+      width: 100px;
+      height: 60px;
+      object-fit: contain;
+    }
+   
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Id</th>
+        <th>Image</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Category</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody class="products-table-body">
+    </tbody>
+  </table>
+</body>
+</html>
