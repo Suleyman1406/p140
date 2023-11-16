@@ -166,7 +166,7 @@ app.put("/api/products/:id", (req, res) => {
 
     const updatedProduct = products[productIdx];
 
-    ["name", "price", "category", "inStock", "imgUrl"].forEach((key) => {
+    ["name", "price", "category", "inStock", "imageUrl"].forEach((key) => {
       if (req.body[key]) {
         updatedProduct[key] = req.body[key];
       }
